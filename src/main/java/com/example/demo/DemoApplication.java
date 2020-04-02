@@ -35,7 +35,7 @@ public class DemoApplication implements CommandLineRunner {
 			bookRepository.save(new Book("title", "author"));
 			bookRepository.save(new Book("title1", "author1"));
 			bookRepository.save(new Book("title2", "author2"));
-			// fetch all customers
+			// fetch all books
 			log.info("books found with findAll():");
 			log.info("-------------------------------");
 			for (Book book : bookRepository.findAll()) {
